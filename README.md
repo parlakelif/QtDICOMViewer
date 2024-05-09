@@ -9,4 +9,4 @@ cmake = 3.29.2
 
 ![Designed Qt interface](assets/img/Qt.png)
 
-![Normal Brain MRI](assets/img/IM0000.dcm")
+![Normal Brain MRI](assets/img/IM0000.dcm)
