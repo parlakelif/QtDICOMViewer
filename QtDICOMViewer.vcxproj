@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A2A2E47-918F-368B-9A9F-9D22BC0DD99F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>QtDICOMViewer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\developer\QtDICOMViewer\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QtDICOMViewer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QtDICOMViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\developer\QtDICOMViewer\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QtDICOMViewer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QtDICOMViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\developer\QtDICOMViewer\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">QtDICOMViewer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">QtDICOMViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\developer\QtDICOMViewer\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">QtDICOMViewer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">QtDICOMViewer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Debug;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/mingw81_64/include" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtOpenGL" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtGui" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtCore" /external:I "C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtXml" /external:I "C:/VTK/include/vtk-9.3" /external:I "C:/VTK/include/vtk-9.3/vtkfreetype/include" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5/src" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5/hl/src" /external:I "C:/VTK/include/vtk-9.3/vtknlohmannjson/include" /external:I "C:/VTK/include/vtk-9.3/vtkogg/include" /external:I "C:/VTK/include/vtk-9.3/vtklibproj/src" /external:I "C:/VTK/include/vtk-9.3/vtklibxml2/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_XML_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;H5_BUILT_AS_DYNAMIC_LIB;VTK_HAS_OGGTHEORA_SUPPORT;FMT_SHARED;DIY_NO_THREADS;LZ4_DLL_IMPORT=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_XML_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;H5_BUILT_AS_DYNAMIC_LIB;VTK_HAS_OGGTHEORA_SUPPORT;FMT_SHARED;DIY_NO_THREADS;LZ4_DLL_IMPORT=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Debug;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;C:\Qt\5.15.2\mingw81_64\include;C:\Qt\5.15.2\mingw81_64\include\QtOpenGL;C:\Qt\5.15.2\mingw81_64\include\QtWidgets;C:\Qt\5.15.2\mingw81_64\include\QtGui;C:\Qt\5.15.2\mingw81_64\include\QtANGLE;C:\Qt\5.15.2\mingw81_64\include\QtCore;C:\Qt\5.15.2\mingw81_64\.\mkspecs\win32-g++;C:\Qt\5.15.2\mingw81_64\include\QtXml;C:\VTK\include\vtk-9.3;C:\VTK\include\vtk-9.3\vtkfreetype\include;C:\VTK\include\vtk-9.3\vtkhdf5;C:\VTK\include\vtk-9.3\vtkhdf5\src;C:\VTK\include\vtk-9.3\vtkhdf5\hl\src;C:\VTK\include\vtk-9.3\vtknlohmannjson\include;C:\VTK\include\vtk-9.3\vtkogg\include;C:\VTK\include\vtk-9.3\vtklibproj\src;C:\VTK\include\vtk-9.3\vtklibxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Debug;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;C:\Qt\5.15.2\mingw81_64\include;C:\Qt\5.15.2\mingw81_64\include\QtOpenGL;C:\Qt\5.15.2\mingw81_64\include\QtWidgets;C:\Qt\5.15.2\mingw81_64\include\QtGui;C:\Qt\5.15.2\mingw81_64\include\QtANGLE;C:\Qt\5.15.2\mingw81_64\include\QtCore;C:\Qt\5.15.2\mingw81_64\.\mkspecs\win32-g++;C:\Qt\5.15.2\mingw81_64\include\QtXml;C:\VTK\include\vtk-9.3;C:\VTK\include\vtk-9.3\vtkfreetype\include;C:\VTK\include\vtk-9.3\vtkhdf5;C:\VTK\include\vtk-9.3\vtkhdf5\src;C:\VTK\include\vtk-9.3\vtkhdf5\hl\src;C:\VTK\include\vtk-9.3\vtknlohmannjson\include;C:\VTK\include\vtk-9.3\vtkogg\include;C:\VTK\include\vtk-9.3\vtklibproj\src;C:\VTK\include\vtk-9.3\vtklibxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target QtDICOMViewer</Message>
+      <Command>setlocal
+cd C:\developer\QtDICOMViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/developer/QtDICOMViewer/build/CMakeFiles/QtDICOMViewer_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/developer/QtDICOMViewer/build/QtDICOMViewer_autogen/autouic_Debug.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Qt\5.15.2\mingw81_64\lib\libQt5OpenGL.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Xml.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Widgets.a;opengl32.lib;glu32.lib;C:\VTK\lib\vtkWrappingTools-9.3.lib;C:\VTK\lib\vtkViewsContext2D-9.3.lib;C:\VTK\lib\vtkTestingRendering-9.3.lib;C:\VTK\lib\vtkViewsInfovis-9.3.lib;C:\VTK\lib\vtkRenderingVolumeOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingLabel-9.3.lib;C:\VTK\lib\vtkRenderingLOD-9.3.lib;C:\VTK\lib\vtkRenderingLICOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingImage-9.3.lib;C:\VTK\lib\vtkRenderingContextOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingCellGrid-9.3.lib;C:\VTK\lib\vtkIOVeraOut-9.3.lib;C:\VTK\lib\vtkIOTecplotTable-9.3.lib;C:\VTK\lib\vtkIOSegY-9.3.lib;C:\VTK\lib\vtkIOParallelXML-9.3.lib;C:\VTK\lib\vtkIOParallel-9.3.lib;C:\VTK\lib\vtkIOPLY-9.3.lib;C:\VTK\lib\vtkIOOggTheora-9.3.lib;C:\VTK\lib\vtktheora-9.3.lib;C:\VTK\lib\vtkogg-9.3.lib;C:\VTK\lib\vtkIONetCDF-9.3.lib;C:\VTK\lib\vtkIOMotionFX-9.3.lib;C:\VTK\lib\vtkIOMINC-9.3.lib;C:\VTK\lib\vtkIOLSDyna-9.3.lib;C:\VTK\lib\vtkIOInfovis-9.3.lib;C:\VTK\lib\vtklibxml2-9.3.lib;C:\VTK\lib\vtkIOImport-9.3.lib;C:\VTK\lib\vtkIOIOSS-9.3.lib;C:\VTK\lib\vtkioss-9.3.lib;C:\VTK\lib\vtkIOFLUENTCFF-9.3.lib;C:\VTK\lib\vtkIOVideo-9.3.lib;C:\VTK\lib\vtkIOMovie-9.3.lib;C:\VTK\lib\vtkIOExportPDF-9.3.lib;C:\VTK\lib\vtkIOExportGL2PS-9.3.lib;C:\VTK\lib\vtkRenderingGL2PSOpenGL2-9.3.lib;C:\VTK\lib\vtkgl2ps-9.3.lib;C:\VTK\lib\vtkIOExport-9.3.lib;C:\VTK\lib\vtkRenderingVtkJS-9.3.lib;C:\VTK\lib\vtkRenderingSceneGraph-9.3.lib;C:\VTK\lib\vtkIOExodus-9.3.lib;C:\VTK\lib\vtkIOEnSight-9.3.lib;C:\VTK\lib\vtkIOCityGML-9.3.lib;C:\VTK\lib\vtkIOChemistry-9.3.lib;C:\VTK\lib\vtkIOCesium3DTiles-9.3.lib;C:\VTK\lib\vtkIOGeometry-9.3.lib;C:\VTK\lib\vtkIOCellGrid-9.3.lib;C:\VTK\lib\vtkIOCONVERGECFD-9.3.lib;C:\VTK\lib\vtkIOHDF-9.3.lib;C:\VTK\lib\vtkIOCGNSReader-9.3.lib;C:\VTK\lib\vtkIOAsynchronous-9.3.lib;C:\VTK\lib\vtkIOAMR-9.3.lib;C:\VTK\lib\vtkInteractionImage-9.3.lib;C:\VTK\lib\vtkImagingStencil-9.3.lib;C:\VTK\lib\vtkImagingStatistics-9.3.lib;C:\VTK\lib\vtkImagingMorphological-9.3.lib;C:\VTK\lib\vtkImagingMath-9.3.lib;C:\VTK\lib\vtkImagingFourier-9.3.lib;C:\VTK\lib\vtkIOSQL-9.3.lib;C:\VTK\lib\vtkGeovisCore-9.3.lib;C:\VTK\lib\vtkInfovisLayout-9.3.lib;C:\VTK\lib\vtkViewsCore-9.3.lib;C:\VTK\lib\vtkInteractionWidgets-9.3.lib;C:\VTK\lib\vtkRenderingVolume-9.3.lib;C:\VTK\lib\vtkRenderingAnnotation-9.3.lib;C:\VTK\lib\vtkImagingHybrid-9.3.lib;C:\VTK\lib\vtkImagingColor-9.3.lib;C:\VTK\lib\vtkInteractionStyle-9.3.lib;C:\VTK\lib\vtkFiltersTopology-9.3.lib;C:\VTK\lib\vtkFiltersTensor-9.3.lib;C:\VTK\lib\vtkFiltersSelection-9.3.lib;C:\VTK\lib\vtkFiltersSMP-9.3.lib;C:\VTK\lib\vtkFiltersReduction-9.3.lib;C:\VTK\lib\vtkFiltersProgrammable-9.3.lib;C:\VTK\lib\vtkFiltersPoints-9.3.lib;C:\VTK\lib\vtkFiltersParallelImaging-9.3.lib;C:\VTK\lib\vtkFiltersImaging-9.3.lib;C:\VTK\lib\vtkImagingGeneral-9.3.lib;C:\VTK\lib\vtkFiltersGeometryPreview-9.3.lib;C:\VTK\lib\vtkFiltersGeneric-9.3.lib;C:\VTK\lib\vtkFiltersFlowPaths-9.3.lib;C:\VTK\lib\vtkFiltersCellGrid-9.3.lib;C:\VTK\lib\vtkFiltersAMR-9.3.lib;C:\VTK\lib\vtkFiltersParallel-9.3.lib;C:\VTK\lib\vtkFiltersTexture-9.3.lib;C:\VTK\lib\vtkFiltersModeling-9.3.lib;C:\VTK\lib\vtkDomainsChemistryOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingHyperTreeGrid-9.3.lib;C:\VTK\lib\vtkRenderingUI-9.3.lib;C:\VTK\lib\vtkFiltersHybrid-9.3.lib;C:\VTK\lib\vtkDomainsChemistry-9.3.lib;C:\VTK\lib\vtkChartsCore-9.3.lib;C:\VTK\lib\vtkInfovisCore-9.3.lib;C:\VTK\lib\vtkFiltersExtraction-9.3.lib;C:\VTK\lib\vtkParallelDIY-9.3.lib;C:\VTK\lib\vtkIOXML-9.3.lib;C:\VTK\lib\vtkIOXMLParser-9.3.lib;C:\VTK\lib\vtkexpat-9.3.lib;C:\VTK\lib\vtkParallelCore-9.3.lib;C:\VTK\lib\vtkIOLegacy-9.3.lib;C:\VTK\lib\vtkIOCore-9.3.lib;C:\VTK\lib\vtkdoubleconversion-9.3.lib;C:\VTK\lib\vtklz4-9.3.lib;C:\VTK\lib\vtklzma-9.3.lib;C:\VTK\lib\vtkFiltersStatistics-9.3.lib;C:\VTK\lib\vtkFiltersHyperTree-9.3.lib;C:\VTK\lib\vtkImagingSources-9.3.lib;C:\VTK\lib\vtkIOImage-9.3.lib;C:\VTK\lib\vtkDICOMParser-9.3.lib;C:\VTK\lib\vtkmetaio-9.3.lib;C:\VTK\lib\vtktiff-9.3.lib;C:\VTK\lib\vtkRenderingContext2D-9.3.lib;C:\VTK\lib\vtkRenderingFreeType-9.3.lib;C:\VTK\lib\vtkfreetype-9.3.lib;C:\VTK\lib\vtkRenderingCore-9.3.lib;C:\VTK\lib\vtkFiltersSources-9.3.lib;C:\VTK\lib\vtkImagingCore-9.3.lib;C:\VTK\lib\vtkFiltersGeneral-9.3.lib;C:\VTK\lib\vtkFiltersVerdict-9.3.lib;C:\VTK\lib\vtkverdict-9.3.lib;C:\VTK\lib\vtkFiltersGeometry-9.3.lib;C:\VTK\lib\vtkCommonComputationalGeometry-9.3.lib;C:\VTK\lib\vtkFiltersCore-9.3.lib;C:\VTK\lib\vtkCommonExecutionModel-9.3.lib;C:\Qt\5.15.2\mingw81_64\lib\libQt5Gui.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Core.a;C:\Qt\5.15.2\mingw81_64\lib\libqtmain.a;C:\VTK\lib\vtklibharu-9.3.lib;C:\VTK\lib\vtkjsoncpp-9.3.lib;C:\VTK\lib\vtkexodusII-9.3.lib;C:\VTK\lib\vtknetcdf-9.3.lib;C:\VTK\lib\vtkcgns-9.3.lib;C:\VTK\lib\vtkhdf5_hl-9.3.lib;C:\VTK\lib\vtkhdf5-9.3.lib;C:\VTK\lib\vtklibproj-9.3.lib;C:\VTK\lib\vtksqlite-9.3.lib;C:\VTK\lib\vtkglew-9.3.lib;opengl32.lib;C:\VTK\lib\vtkpng-9.3.lib;C:\VTK\lib\vtkjpeg-9.3.lib;C:\VTK\lib\vtkzlib-9.3.lib;C:\VTK\lib\vtkCommonColor-9.3.lib;C:\VTK\lib\vtkfmt-9.3.lib;C:\VTK\lib\vtkCommonDataModel-9.3.lib;C:\VTK\lib\vtkpugixml-9.3.lib;C:\VTK\lib\vtkCommonSystem-9.3.lib;C:\VTK\lib\vtkCommonMisc-9.3.lib;C:\VTK\lib\vtkCommonTransforms-9.3.lib;C:\VTK\lib\vtkCommonMath-9.3.lib;C:\VTK\lib\vtkkissfft-9.3.lib;C:\VTK\lib\vtkCommonCore-9.3.lib;C:\VTK\lib\vtkloguru-9.3.lib;C:\VTK\lib\vtksys-9.3.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/developer/QtDICOMViewer/build/Debug/QtDICOMViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/developer/QtDICOMViewer/build/Debug/QtDICOMViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Release;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/mingw81_64/include" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtOpenGL" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtGui" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtCore" /external:I "C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtXml" /external:I "C:/VTK/include/vtk-9.3" /external:I "C:/VTK/include/vtk-9.3/vtkfreetype/include" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5/src" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5/hl/src" /external:I "C:/VTK/include/vtk-9.3/vtknlohmannjson/include" /external:I "C:/VTK/include/vtk-9.3/vtkogg/include" /external:I "C:/VTK/include/vtk-9.3/vtklibproj/src" /external:I "C:/VTK/include/vtk-9.3/vtklibxml2/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_XML_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;H5_BUILT_AS_DYNAMIC_LIB;VTK_HAS_OGGTHEORA_SUPPORT;FMT_SHARED;DIY_NO_THREADS;LZ4_DLL_IMPORT=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_XML_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;H5_BUILT_AS_DYNAMIC_LIB;VTK_HAS_OGGTHEORA_SUPPORT;FMT_SHARED;DIY_NO_THREADS;LZ4_DLL_IMPORT=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Release;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;C:\Qt\5.15.2\mingw81_64\include;C:\Qt\5.15.2\mingw81_64\include\QtOpenGL;C:\Qt\5.15.2\mingw81_64\include\QtWidgets;C:\Qt\5.15.2\mingw81_64\include\QtGui;C:\Qt\5.15.2\mingw81_64\include\QtANGLE;C:\Qt\5.15.2\mingw81_64\include\QtCore;C:\Qt\5.15.2\mingw81_64\.\mkspecs\win32-g++;C:\Qt\5.15.2\mingw81_64\include\QtXml;C:\VTK\include\vtk-9.3;C:\VTK\include\vtk-9.3\vtkfreetype\include;C:\VTK\include\vtk-9.3\vtkhdf5;C:\VTK\include\vtk-9.3\vtkhdf5\src;C:\VTK\include\vtk-9.3\vtkhdf5\hl\src;C:\VTK\include\vtk-9.3\vtknlohmannjson\include;C:\VTK\include\vtk-9.3\vtkogg\include;C:\VTK\include\vtk-9.3\vtklibproj\src;C:\VTK\include\vtk-9.3\vtklibxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Release;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;C:\Qt\5.15.2\mingw81_64\include;C:\Qt\5.15.2\mingw81_64\include\QtOpenGL;C:\Qt\5.15.2\mingw81_64\include\QtWidgets;C:\Qt\5.15.2\mingw81_64\include\QtGui;C:\Qt\5.15.2\mingw81_64\include\QtANGLE;C:\Qt\5.15.2\mingw81_64\include\QtCore;C:\Qt\5.15.2\mingw81_64\.\mkspecs\win32-g++;C:\Qt\5.15.2\mingw81_64\include\QtXml;C:\VTK\include\vtk-9.3;C:\VTK\include\vtk-9.3\vtkfreetype\include;C:\VTK\include\vtk-9.3\vtkhdf5;C:\VTK\include\vtk-9.3\vtkhdf5\src;C:\VTK\include\vtk-9.3\vtkhdf5\hl\src;C:\VTK\include\vtk-9.3\vtknlohmannjson\include;C:\VTK\include\vtk-9.3\vtkogg\include;C:\VTK\include\vtk-9.3\vtklibproj\src;C:\VTK\include\vtk-9.3\vtklibxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target QtDICOMViewer</Message>
+      <Command>setlocal
+cd C:\developer\QtDICOMViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/developer/QtDICOMViewer/build/CMakeFiles/QtDICOMViewer_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/developer/QtDICOMViewer/build/QtDICOMViewer_autogen/autouic_Release.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Qt\5.15.2\mingw81_64\lib\libQt5OpenGL.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Xml.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Widgets.a;opengl32.lib;glu32.lib;C:\VTK\lib\vtkWrappingTools-9.3.lib;C:\VTK\lib\vtkViewsContext2D-9.3.lib;C:\VTK\lib\vtkTestingRendering-9.3.lib;C:\VTK\lib\vtkViewsInfovis-9.3.lib;C:\VTK\lib\vtkRenderingVolumeOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingLabel-9.3.lib;C:\VTK\lib\vtkRenderingLOD-9.3.lib;C:\VTK\lib\vtkRenderingLICOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingImage-9.3.lib;C:\VTK\lib\vtkRenderingContextOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingCellGrid-9.3.lib;C:\VTK\lib\vtkIOVeraOut-9.3.lib;C:\VTK\lib\vtkIOTecplotTable-9.3.lib;C:\VTK\lib\vtkIOSegY-9.3.lib;C:\VTK\lib\vtkIOParallelXML-9.3.lib;C:\VTK\lib\vtkIOParallel-9.3.lib;C:\VTK\lib\vtkIOPLY-9.3.lib;C:\VTK\lib\vtkIOOggTheora-9.3.lib;C:\VTK\lib\vtktheora-9.3.lib;C:\VTK\lib\vtkogg-9.3.lib;C:\VTK\lib\vtkIONetCDF-9.3.lib;C:\VTK\lib\vtkIOMotionFX-9.3.lib;C:\VTK\lib\vtkIOMINC-9.3.lib;C:\VTK\lib\vtkIOLSDyna-9.3.lib;C:\VTK\lib\vtkIOInfovis-9.3.lib;C:\VTK\lib\vtklibxml2-9.3.lib;C:\VTK\lib\vtkIOImport-9.3.lib;C:\VTK\lib\vtkIOIOSS-9.3.lib;C:\VTK\lib\vtkioss-9.3.lib;C:\VTK\lib\vtkIOFLUENTCFF-9.3.lib;C:\VTK\lib\vtkIOVideo-9.3.lib;C:\VTK\lib\vtkIOMovie-9.3.lib;C:\VTK\lib\vtkIOExportPDF-9.3.lib;C:\VTK\lib\vtkIOExportGL2PS-9.3.lib;C:\VTK\lib\vtkRenderingGL2PSOpenGL2-9.3.lib;C:\VTK\lib\vtkgl2ps-9.3.lib;C:\VTK\lib\vtkIOExport-9.3.lib;C:\VTK\lib\vtkRenderingVtkJS-9.3.lib;C:\VTK\lib\vtkRenderingSceneGraph-9.3.lib;C:\VTK\lib\vtkIOExodus-9.3.lib;C:\VTK\lib\vtkIOEnSight-9.3.lib;C:\VTK\lib\vtkIOCityGML-9.3.lib;C:\VTK\lib\vtkIOChemistry-9.3.lib;C:\VTK\lib\vtkIOCesium3DTiles-9.3.lib;C:\VTK\lib\vtkIOGeometry-9.3.lib;C:\VTK\lib\vtkIOCellGrid-9.3.lib;C:\VTK\lib\vtkIOCONVERGECFD-9.3.lib;C:\VTK\lib\vtkIOHDF-9.3.lib;C:\VTK\lib\vtkIOCGNSReader-9.3.lib;C:\VTK\lib\vtkIOAsynchronous-9.3.lib;C:\VTK\lib\vtkIOAMR-9.3.lib;C:\VTK\lib\vtkInteractionImage-9.3.lib;C:\VTK\lib\vtkImagingStencil-9.3.lib;C:\VTK\lib\vtkImagingStatistics-9.3.lib;C:\VTK\lib\vtkImagingMorphological-9.3.lib;C:\VTK\lib\vtkImagingMath-9.3.lib;C:\VTK\lib\vtkImagingFourier-9.3.lib;C:\VTK\lib\vtkIOSQL-9.3.lib;C:\VTK\lib\vtkGeovisCore-9.3.lib;C:\VTK\lib\vtkInfovisLayout-9.3.lib;C:\VTK\lib\vtkViewsCore-9.3.lib;C:\VTK\lib\vtkInteractionWidgets-9.3.lib;C:\VTK\lib\vtkRenderingVolume-9.3.lib;C:\VTK\lib\vtkRenderingAnnotation-9.3.lib;C:\VTK\lib\vtkImagingHybrid-9.3.lib;C:\VTK\lib\vtkImagingColor-9.3.lib;C:\VTK\lib\vtkInteractionStyle-9.3.lib;C:\VTK\lib\vtkFiltersTopology-9.3.lib;C:\VTK\lib\vtkFiltersTensor-9.3.lib;C:\VTK\lib\vtkFiltersSelection-9.3.lib;C:\VTK\lib\vtkFiltersSMP-9.3.lib;C:\VTK\lib\vtkFiltersReduction-9.3.lib;C:\VTK\lib\vtkFiltersProgrammable-9.3.lib;C:\VTK\lib\vtkFiltersPoints-9.3.lib;C:\VTK\lib\vtkFiltersParallelImaging-9.3.lib;C:\VTK\lib\vtkFiltersImaging-9.3.lib;C:\VTK\lib\vtkImagingGeneral-9.3.lib;C:\VTK\lib\vtkFiltersGeometryPreview-9.3.lib;C:\VTK\lib\vtkFiltersGeneric-9.3.lib;C:\VTK\lib\vtkFiltersFlowPaths-9.3.lib;C:\VTK\lib\vtkFiltersCellGrid-9.3.lib;C:\VTK\lib\vtkFiltersAMR-9.3.lib;C:\VTK\lib\vtkFiltersParallel-9.3.lib;C:\VTK\lib\vtkFiltersTexture-9.3.lib;C:\VTK\lib\vtkFiltersModeling-9.3.lib;C:\VTK\lib\vtkDomainsChemistryOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingHyperTreeGrid-9.3.lib;C:\VTK\lib\vtkRenderingUI-9.3.lib;C:\VTK\lib\vtkFiltersHybrid-9.3.lib;C:\VTK\lib\vtkDomainsChemistry-9.3.lib;C:\VTK\lib\vtkChartsCore-9.3.lib;C:\VTK\lib\vtkInfovisCore-9.3.lib;C:\VTK\lib\vtkFiltersExtraction-9.3.lib;C:\VTK\lib\vtkParallelDIY-9.3.lib;C:\VTK\lib\vtkIOXML-9.3.lib;C:\VTK\lib\vtkIOXMLParser-9.3.lib;C:\VTK\lib\vtkexpat-9.3.lib;C:\VTK\lib\vtkParallelCore-9.3.lib;C:\VTK\lib\vtkIOLegacy-9.3.lib;C:\VTK\lib\vtkIOCore-9.3.lib;C:\VTK\lib\vtkdoubleconversion-9.3.lib;C:\VTK\lib\vtklz4-9.3.lib;C:\VTK\lib\vtklzma-9.3.lib;C:\VTK\lib\vtkFiltersStatistics-9.3.lib;C:\VTK\lib\vtkFiltersHyperTree-9.3.lib;C:\VTK\lib\vtkImagingSources-9.3.lib;C:\VTK\lib\vtkIOImage-9.3.lib;C:\VTK\lib\vtkDICOMParser-9.3.lib;C:\VTK\lib\vtkmetaio-9.3.lib;C:\VTK\lib\vtktiff-9.3.lib;C:\VTK\lib\vtkRenderingContext2D-9.3.lib;C:\VTK\lib\vtkRenderingFreeType-9.3.lib;C:\VTK\lib\vtkfreetype-9.3.lib;C:\VTK\lib\vtkRenderingCore-9.3.lib;C:\VTK\lib\vtkFiltersSources-9.3.lib;C:\VTK\lib\vtkImagingCore-9.3.lib;C:\VTK\lib\vtkFiltersGeneral-9.3.lib;C:\VTK\lib\vtkFiltersVerdict-9.3.lib;C:\VTK\lib\vtkverdict-9.3.lib;C:\VTK\lib\vtkFiltersGeometry-9.3.lib;C:\VTK\lib\vtkCommonComputationalGeometry-9.3.lib;C:\VTK\lib\vtkFiltersCore-9.3.lib;C:\VTK\lib\vtkCommonExecutionModel-9.3.lib;C:\Qt\5.15.2\mingw81_64\lib\libQt5Gui.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Core.a;C:\Qt\5.15.2\mingw81_64\lib\libqtmain.a;C:\VTK\lib\vtklibharu-9.3.lib;C:\VTK\lib\vtkjsoncpp-9.3.lib;C:\VTK\lib\vtkexodusII-9.3.lib;C:\VTK\lib\vtknetcdf-9.3.lib;C:\VTK\lib\vtkcgns-9.3.lib;C:\VTK\lib\vtkhdf5_hl-9.3.lib;C:\VTK\lib\vtkhdf5-9.3.lib;C:\VTK\lib\vtklibproj-9.3.lib;C:\VTK\lib\vtksqlite-9.3.lib;C:\VTK\lib\vtkglew-9.3.lib;opengl32.lib;C:\VTK\lib\vtkpng-9.3.lib;C:\VTK\lib\vtkjpeg-9.3.lib;C:\VTK\lib\vtkzlib-9.3.lib;C:\VTK\lib\vtkCommonColor-9.3.lib;C:\VTK\lib\vtkfmt-9.3.lib;C:\VTK\lib\vtkCommonDataModel-9.3.lib;C:\VTK\lib\vtkpugixml-9.3.lib;C:\VTK\lib\vtkCommonSystem-9.3.lib;C:\VTK\lib\vtkCommonMisc-9.3.lib;C:\VTK\lib\vtkCommonTransforms-9.3.lib;C:\VTK\lib\vtkCommonMath-9.3.lib;C:\VTK\lib\vtkkissfft-9.3.lib;C:\VTK\lib\vtkCommonCore-9.3.lib;C:\VTK\lib\vtkloguru-9.3.lib;C:\VTK\lib\vtksys-9.3.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/developer/QtDICOMViewer/build/Release/QtDICOMViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/developer/QtDICOMViewer/build/Release/QtDICOMViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_MinSizeRel;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/mingw81_64/include" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtOpenGL" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtGui" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtCore" /external:I "C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtXml" /external:I "C:/VTK/include/vtk-9.3" /external:I "C:/VTK/include/vtk-9.3/vtkfreetype/include" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5/src" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5/hl/src" /external:I "C:/VTK/include/vtk-9.3/vtknlohmannjson/include" /external:I "C:/VTK/include/vtk-9.3/vtkogg/include" /external:I "C:/VTK/include/vtk-9.3/vtklibproj/src" /external:I "C:/VTK/include/vtk-9.3/vtklibxml2/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_XML_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;H5_BUILT_AS_DYNAMIC_LIB;VTK_HAS_OGGTHEORA_SUPPORT;FMT_SHARED;DIY_NO_THREADS;LZ4_DLL_IMPORT=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_XML_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;H5_BUILT_AS_DYNAMIC_LIB;VTK_HAS_OGGTHEORA_SUPPORT;FMT_SHARED;DIY_NO_THREADS;LZ4_DLL_IMPORT=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_MinSizeRel;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;C:\Qt\5.15.2\mingw81_64\include;C:\Qt\5.15.2\mingw81_64\include\QtOpenGL;C:\Qt\5.15.2\mingw81_64\include\QtWidgets;C:\Qt\5.15.2\mingw81_64\include\QtGui;C:\Qt\5.15.2\mingw81_64\include\QtANGLE;C:\Qt\5.15.2\mingw81_64\include\QtCore;C:\Qt\5.15.2\mingw81_64\.\mkspecs\win32-g++;C:\Qt\5.15.2\mingw81_64\include\QtXml;C:\VTK\include\vtk-9.3;C:\VTK\include\vtk-9.3\vtkfreetype\include;C:\VTK\include\vtk-9.3\vtkhdf5;C:\VTK\include\vtk-9.3\vtkhdf5\src;C:\VTK\include\vtk-9.3\vtkhdf5\hl\src;C:\VTK\include\vtk-9.3\vtknlohmannjson\include;C:\VTK\include\vtk-9.3\vtkogg\include;C:\VTK\include\vtk-9.3\vtklibproj\src;C:\VTK\include\vtk-9.3\vtklibxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_MinSizeRel;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;C:\Qt\5.15.2\mingw81_64\include;C:\Qt\5.15.2\mingw81_64\include\QtOpenGL;C:\Qt\5.15.2\mingw81_64\include\QtWidgets;C:\Qt\5.15.2\mingw81_64\include\QtGui;C:\Qt\5.15.2\mingw81_64\include\QtANGLE;C:\Qt\5.15.2\mingw81_64\include\QtCore;C:\Qt\5.15.2\mingw81_64\.\mkspecs\win32-g++;C:\Qt\5.15.2\mingw81_64\include\QtXml;C:\VTK\include\vtk-9.3;C:\VTK\include\vtk-9.3\vtkfreetype\include;C:\VTK\include\vtk-9.3\vtkhdf5;C:\VTK\include\vtk-9.3\vtkhdf5\src;C:\VTK\include\vtk-9.3\vtkhdf5\hl\src;C:\VTK\include\vtk-9.3\vtknlohmannjson\include;C:\VTK\include\vtk-9.3\vtkogg\include;C:\VTK\include\vtk-9.3\vtklibproj\src;C:\VTK\include\vtk-9.3\vtklibxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target QtDICOMViewer</Message>
+      <Command>setlocal
+cd C:\developer\QtDICOMViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/developer/QtDICOMViewer/build/CMakeFiles/QtDICOMViewer_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/developer/QtDICOMViewer/build/QtDICOMViewer_autogen/autouic_MinSizeRel.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Qt\5.15.2\mingw81_64\lib\libQt5OpenGL.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Xml.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Widgets.a;opengl32.lib;glu32.lib;C:\VTK\lib\vtkWrappingTools-9.3.lib;C:\VTK\lib\vtkViewsContext2D-9.3.lib;C:\VTK\lib\vtkTestingRendering-9.3.lib;C:\VTK\lib\vtkViewsInfovis-9.3.lib;C:\VTK\lib\vtkRenderingVolumeOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingLabel-9.3.lib;C:\VTK\lib\vtkRenderingLOD-9.3.lib;C:\VTK\lib\vtkRenderingLICOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingImage-9.3.lib;C:\VTK\lib\vtkRenderingContextOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingCellGrid-9.3.lib;C:\VTK\lib\vtkIOVeraOut-9.3.lib;C:\VTK\lib\vtkIOTecplotTable-9.3.lib;C:\VTK\lib\vtkIOSegY-9.3.lib;C:\VTK\lib\vtkIOParallelXML-9.3.lib;C:\VTK\lib\vtkIOParallel-9.3.lib;C:\VTK\lib\vtkIOPLY-9.3.lib;C:\VTK\lib\vtkIOOggTheora-9.3.lib;C:\VTK\lib\vtktheora-9.3.lib;C:\VTK\lib\vtkogg-9.3.lib;C:\VTK\lib\vtkIONetCDF-9.3.lib;C:\VTK\lib\vtkIOMotionFX-9.3.lib;C:\VTK\lib\vtkIOMINC-9.3.lib;C:\VTK\lib\vtkIOLSDyna-9.3.lib;C:\VTK\lib\vtkIOInfovis-9.3.lib;C:\VTK\lib\vtklibxml2-9.3.lib;C:\VTK\lib\vtkIOImport-9.3.lib;C:\VTK\lib\vtkIOIOSS-9.3.lib;C:\VTK\lib\vtkioss-9.3.lib;C:\VTK\lib\vtkIOFLUENTCFF-9.3.lib;C:\VTK\lib\vtkIOVideo-9.3.lib;C:\VTK\lib\vtkIOMovie-9.3.lib;C:\VTK\lib\vtkIOExportPDF-9.3.lib;C:\VTK\lib\vtkIOExportGL2PS-9.3.lib;C:\VTK\lib\vtkRenderingGL2PSOpenGL2-9.3.lib;C:\VTK\lib\vtkgl2ps-9.3.lib;C:\VTK\lib\vtkIOExport-9.3.lib;C:\VTK\lib\vtkRenderingVtkJS-9.3.lib;C:\VTK\lib\vtkRenderingSceneGraph-9.3.lib;C:\VTK\lib\vtkIOExodus-9.3.lib;C:\VTK\lib\vtkIOEnSight-9.3.lib;C:\VTK\lib\vtkIOCityGML-9.3.lib;C:\VTK\lib\vtkIOChemistry-9.3.lib;C:\VTK\lib\vtkIOCesium3DTiles-9.3.lib;C:\VTK\lib\vtkIOGeometry-9.3.lib;C:\VTK\lib\vtkIOCellGrid-9.3.lib;C:\VTK\lib\vtkIOCONVERGECFD-9.3.lib;C:\VTK\lib\vtkIOHDF-9.3.lib;C:\VTK\lib\vtkIOCGNSReader-9.3.lib;C:\VTK\lib\vtkIOAsynchronous-9.3.lib;C:\VTK\lib\vtkIOAMR-9.3.lib;C:\VTK\lib\vtkInteractionImage-9.3.lib;C:\VTK\lib\vtkImagingStencil-9.3.lib;C:\VTK\lib\vtkImagingStatistics-9.3.lib;C:\VTK\lib\vtkImagingMorphological-9.3.lib;C:\VTK\lib\vtkImagingMath-9.3.lib;C:\VTK\lib\vtkImagingFourier-9.3.lib;C:\VTK\lib\vtkIOSQL-9.3.lib;C:\VTK\lib\vtkGeovisCore-9.3.lib;C:\VTK\lib\vtkInfovisLayout-9.3.lib;C:\VTK\lib\vtkViewsCore-9.3.lib;C:\VTK\lib\vtkInteractionWidgets-9.3.lib;C:\VTK\lib\vtkRenderingVolume-9.3.lib;C:\VTK\lib\vtkRenderingAnnotation-9.3.lib;C:\VTK\lib\vtkImagingHybrid-9.3.lib;C:\VTK\lib\vtkImagingColor-9.3.lib;C:\VTK\lib\vtkInteractionStyle-9.3.lib;C:\VTK\lib\vtkFiltersTopology-9.3.lib;C:\VTK\lib\vtkFiltersTensor-9.3.lib;C:\VTK\lib\vtkFiltersSelection-9.3.lib;C:\VTK\lib\vtkFiltersSMP-9.3.lib;C:\VTK\lib\vtkFiltersReduction-9.3.lib;C:\VTK\lib\vtkFiltersProgrammable-9.3.lib;C:\VTK\lib\vtkFiltersPoints-9.3.lib;C:\VTK\lib\vtkFiltersParallelImaging-9.3.lib;C:\VTK\lib\vtkFiltersImaging-9.3.lib;C:\VTK\lib\vtkImagingGeneral-9.3.lib;C:\VTK\lib\vtkFiltersGeometryPreview-9.3.lib;C:\VTK\lib\vtkFiltersGeneric-9.3.lib;C:\VTK\lib\vtkFiltersFlowPaths-9.3.lib;C:\VTK\lib\vtkFiltersCellGrid-9.3.lib;C:\VTK\lib\vtkFiltersAMR-9.3.lib;C:\VTK\lib\vtkFiltersParallel-9.3.lib;C:\VTK\lib\vtkFiltersTexture-9.3.lib;C:\VTK\lib\vtkFiltersModeling-9.3.lib;C:\VTK\lib\vtkDomainsChemistryOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingHyperTreeGrid-9.3.lib;C:\VTK\lib\vtkRenderingUI-9.3.lib;C:\VTK\lib\vtkFiltersHybrid-9.3.lib;C:\VTK\lib\vtkDomainsChemistry-9.3.lib;C:\VTK\lib\vtkChartsCore-9.3.lib;C:\VTK\lib\vtkInfovisCore-9.3.lib;C:\VTK\lib\vtkFiltersExtraction-9.3.lib;C:\VTK\lib\vtkParallelDIY-9.3.lib;C:\VTK\lib\vtkIOXML-9.3.lib;C:\VTK\lib\vtkIOXMLParser-9.3.lib;C:\VTK\lib\vtkexpat-9.3.lib;C:\VTK\lib\vtkParallelCore-9.3.lib;C:\VTK\lib\vtkIOLegacy-9.3.lib;C:\VTK\lib\vtkIOCore-9.3.lib;C:\VTK\lib\vtkdoubleconversion-9.3.lib;C:\VTK\lib\vtklz4-9.3.lib;C:\VTK\lib\vtklzma-9.3.lib;C:\VTK\lib\vtkFiltersStatistics-9.3.lib;C:\VTK\lib\vtkFiltersHyperTree-9.3.lib;C:\VTK\lib\vtkImagingSources-9.3.lib;C:\VTK\lib\vtkIOImage-9.3.lib;C:\VTK\lib\vtkDICOMParser-9.3.lib;C:\VTK\lib\vtkmetaio-9.3.lib;C:\VTK\lib\vtktiff-9.3.lib;C:\VTK\lib\vtkRenderingContext2D-9.3.lib;C:\VTK\lib\vtkRenderingFreeType-9.3.lib;C:\VTK\lib\vtkfreetype-9.3.lib;C:\VTK\lib\vtkRenderingCore-9.3.lib;C:\VTK\lib\vtkFiltersSources-9.3.lib;C:\VTK\lib\vtkImagingCore-9.3.lib;C:\VTK\lib\vtkFiltersGeneral-9.3.lib;C:\VTK\lib\vtkFiltersVerdict-9.3.lib;C:\VTK\lib\vtkverdict-9.3.lib;C:\VTK\lib\vtkFiltersGeometry-9.3.lib;C:\VTK\lib\vtkCommonComputationalGeometry-9.3.lib;C:\VTK\lib\vtkFiltersCore-9.3.lib;C:\VTK\lib\vtkCommonExecutionModel-9.3.lib;C:\Qt\5.15.2\mingw81_64\lib\libQt5Gui.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Core.a;C:\Qt\5.15.2\mingw81_64\lib\libqtmain.a;C:\VTK\lib\vtklibharu-9.3.lib;C:\VTK\lib\vtkjsoncpp-9.3.lib;C:\VTK\lib\vtkexodusII-9.3.lib;C:\VTK\lib\vtknetcdf-9.3.lib;C:\VTK\lib\vtkcgns-9.3.lib;C:\VTK\lib\vtkhdf5_hl-9.3.lib;C:\VTK\lib\vtkhdf5-9.3.lib;C:\VTK\lib\vtklibproj-9.3.lib;C:\VTK\lib\vtksqlite-9.3.lib;C:\VTK\lib\vtkglew-9.3.lib;opengl32.lib;C:\VTK\lib\vtkpng-9.3.lib;C:\VTK\lib\vtkjpeg-9.3.lib;C:\VTK\lib\vtkzlib-9.3.lib;C:\VTK\lib\vtkCommonColor-9.3.lib;C:\VTK\lib\vtkfmt-9.3.lib;C:\VTK\lib\vtkCommonDataModel-9.3.lib;C:\VTK\lib\vtkpugixml-9.3.lib;C:\VTK\lib\vtkCommonSystem-9.3.lib;C:\VTK\lib\vtkCommonMisc-9.3.lib;C:\VTK\lib\vtkCommonTransforms-9.3.lib;C:\VTK\lib\vtkCommonMath-9.3.lib;C:\VTK\lib\vtkkissfft-9.3.lib;C:\VTK\lib\vtkCommonCore-9.3.lib;C:\VTK\lib\vtkloguru-9.3.lib;C:\VTK\lib\vtksys-9.3.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/developer/QtDICOMViewer/build/MinSizeRel/QtDICOMViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/developer/QtDICOMViewer/build/MinSizeRel/QtDICOMViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_RelWithDebInfo;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Qt/5.15.2/mingw81_64/include" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtOpenGL" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtWidgets" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtGui" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtANGLE" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtCore" /external:I "C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++" /external:I "C:/Qt/5.15.2/mingw81_64/include/QtXml" /external:I "C:/VTK/include/vtk-9.3" /external:I "C:/VTK/include/vtk-9.3/vtkfreetype/include" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5/src" /external:I "C:/VTK/include/vtk-9.3/vtkhdf5/hl/src" /external:I "C:/VTK/include/vtk-9.3/vtknlohmannjson/include" /external:I "C:/VTK/include/vtk-9.3/vtkogg/include" /external:I "C:/VTK/include/vtk-9.3/vtklibproj/src" /external:I "C:/VTK/include/vtk-9.3/vtklibxml2/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_XML_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;H5_BUILT_AS_DYNAMIC_LIB;VTK_HAS_OGGTHEORA_SUPPORT;FMT_SHARED;DIY_NO_THREADS;LZ4_DLL_IMPORT=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_XML_LIB;kiss_fft_scalar=double;KISSFFT_DLL_IMPORT=1;H5_BUILT_AS_DYNAMIC_LIB;VTK_HAS_OGGTHEORA_SUPPORT;FMT_SHARED;DIY_NO_THREADS;LZ4_DLL_IMPORT=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_RelWithDebInfo;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;C:\Qt\5.15.2\mingw81_64\include;C:\Qt\5.15.2\mingw81_64\include\QtOpenGL;C:\Qt\5.15.2\mingw81_64\include\QtWidgets;C:\Qt\5.15.2\mingw81_64\include\QtGui;C:\Qt\5.15.2\mingw81_64\include\QtANGLE;C:\Qt\5.15.2\mingw81_64\include\QtCore;C:\Qt\5.15.2\mingw81_64\.\mkspecs\win32-g++;C:\Qt\5.15.2\mingw81_64\include\QtXml;C:\VTK\include\vtk-9.3;C:\VTK\include\vtk-9.3\vtkfreetype\include;C:\VTK\include\vtk-9.3\vtkhdf5;C:\VTK\include\vtk-9.3\vtkhdf5\src;C:\VTK\include\vtk-9.3\vtkhdf5\hl\src;C:\VTK\include\vtk-9.3\vtknlohmannjson\include;C:\VTK\include\vtk-9.3\vtkogg\include;C:\VTK\include\vtk-9.3\vtklibproj\src;C:\VTK\include\vtk-9.3\vtklibxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\developer\QtDICOMViewer\build;C:\developer\QtDICOMViewer;C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_RelWithDebInfo;C:\GDCM\include\gdcm-3.0;C:\developer\QtDICOMViewer\forms;C:\developer\QtDICOMViewer\include;C:\developer\QtDICOMViewer\src;C:\Qt\5.15.2\mingw81_64\include;C:\Qt\5.15.2\mingw81_64\include\QtOpenGL;C:\Qt\5.15.2\mingw81_64\include\QtWidgets;C:\Qt\5.15.2\mingw81_64\include\QtGui;C:\Qt\5.15.2\mingw81_64\include\QtANGLE;C:\Qt\5.15.2\mingw81_64\include\QtCore;C:\Qt\5.15.2\mingw81_64\.\mkspecs\win32-g++;C:\Qt\5.15.2\mingw81_64\include\QtXml;C:\VTK\include\vtk-9.3;C:\VTK\include\vtk-9.3\vtkfreetype\include;C:\VTK\include\vtk-9.3\vtkhdf5;C:\VTK\include\vtk-9.3\vtkhdf5\src;C:\VTK\include\vtk-9.3\vtkhdf5\hl\src;C:\VTK\include\vtk-9.3\vtknlohmannjson\include;C:\VTK\include\vtk-9.3\vtkogg\include;C:\VTK\include\vtk-9.3\vtklibproj\src;C:\VTK\include\vtk-9.3\vtklibxml2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target QtDICOMViewer</Message>
+      <Command>setlocal
+cd C:\developer\QtDICOMViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/developer/QtDICOMViewer/build/CMakeFiles/QtDICOMViewer_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/developer/QtDICOMViewer/build/QtDICOMViewer_autogen/autouic_RelWithDebInfo.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Qt\5.15.2\mingw81_64\lib\libQt5OpenGL.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Xml.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Widgets.a;opengl32.lib;glu32.lib;C:\VTK\lib\vtkWrappingTools-9.3.lib;C:\VTK\lib\vtkViewsContext2D-9.3.lib;C:\VTK\lib\vtkTestingRendering-9.3.lib;C:\VTK\lib\vtkViewsInfovis-9.3.lib;C:\VTK\lib\vtkRenderingVolumeOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingLabel-9.3.lib;C:\VTK\lib\vtkRenderingLOD-9.3.lib;C:\VTK\lib\vtkRenderingLICOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingImage-9.3.lib;C:\VTK\lib\vtkRenderingContextOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingCellGrid-9.3.lib;C:\VTK\lib\vtkIOVeraOut-9.3.lib;C:\VTK\lib\vtkIOTecplotTable-9.3.lib;C:\VTK\lib\vtkIOSegY-9.3.lib;C:\VTK\lib\vtkIOParallelXML-9.3.lib;C:\VTK\lib\vtkIOParallel-9.3.lib;C:\VTK\lib\vtkIOPLY-9.3.lib;C:\VTK\lib\vtkIOOggTheora-9.3.lib;C:\VTK\lib\vtktheora-9.3.lib;C:\VTK\lib\vtkogg-9.3.lib;C:\VTK\lib\vtkIONetCDF-9.3.lib;C:\VTK\lib\vtkIOMotionFX-9.3.lib;C:\VTK\lib\vtkIOMINC-9.3.lib;C:\VTK\lib\vtkIOLSDyna-9.3.lib;C:\VTK\lib\vtkIOInfovis-9.3.lib;C:\VTK\lib\vtklibxml2-9.3.lib;C:\VTK\lib\vtkIOImport-9.3.lib;C:\VTK\lib\vtkIOIOSS-9.3.lib;C:\VTK\lib\vtkioss-9.3.lib;C:\VTK\lib\vtkIOFLUENTCFF-9.3.lib;C:\VTK\lib\vtkIOVideo-9.3.lib;C:\VTK\lib\vtkIOMovie-9.3.lib;C:\VTK\lib\vtkIOExportPDF-9.3.lib;C:\VTK\lib\vtkIOExportGL2PS-9.3.lib;C:\VTK\lib\vtkRenderingGL2PSOpenGL2-9.3.lib;C:\VTK\lib\vtkgl2ps-9.3.lib;C:\VTK\lib\vtkIOExport-9.3.lib;C:\VTK\lib\vtkRenderingVtkJS-9.3.lib;C:\VTK\lib\vtkRenderingSceneGraph-9.3.lib;C:\VTK\lib\vtkIOExodus-9.3.lib;C:\VTK\lib\vtkIOEnSight-9.3.lib;C:\VTK\lib\vtkIOCityGML-9.3.lib;C:\VTK\lib\vtkIOChemistry-9.3.lib;C:\VTK\lib\vtkIOCesium3DTiles-9.3.lib;C:\VTK\lib\vtkIOGeometry-9.3.lib;C:\VTK\lib\vtkIOCellGrid-9.3.lib;C:\VTK\lib\vtkIOCONVERGECFD-9.3.lib;C:\VTK\lib\vtkIOHDF-9.3.lib;C:\VTK\lib\vtkIOCGNSReader-9.3.lib;C:\VTK\lib\vtkIOAsynchronous-9.3.lib;C:\VTK\lib\vtkIOAMR-9.3.lib;C:\VTK\lib\vtkInteractionImage-9.3.lib;C:\VTK\lib\vtkImagingStencil-9.3.lib;C:\VTK\lib\vtkImagingStatistics-9.3.lib;C:\VTK\lib\vtkImagingMorphological-9.3.lib;C:\VTK\lib\vtkImagingMath-9.3.lib;C:\VTK\lib\vtkImagingFourier-9.3.lib;C:\VTK\lib\vtkIOSQL-9.3.lib;C:\VTK\lib\vtkGeovisCore-9.3.lib;C:\VTK\lib\vtkInfovisLayout-9.3.lib;C:\VTK\lib\vtkViewsCore-9.3.lib;C:\VTK\lib\vtkInteractionWidgets-9.3.lib;C:\VTK\lib\vtkRenderingVolume-9.3.lib;C:\VTK\lib\vtkRenderingAnnotation-9.3.lib;C:\VTK\lib\vtkImagingHybrid-9.3.lib;C:\VTK\lib\vtkImagingColor-9.3.lib;C:\VTK\lib\vtkInteractionStyle-9.3.lib;C:\VTK\lib\vtkFiltersTopology-9.3.lib;C:\VTK\lib\vtkFiltersTensor-9.3.lib;C:\VTK\lib\vtkFiltersSelection-9.3.lib;C:\VTK\lib\vtkFiltersSMP-9.3.lib;C:\VTK\lib\vtkFiltersReduction-9.3.lib;C:\VTK\lib\vtkFiltersProgrammable-9.3.lib;C:\VTK\lib\vtkFiltersPoints-9.3.lib;C:\VTK\lib\vtkFiltersParallelImaging-9.3.lib;C:\VTK\lib\vtkFiltersImaging-9.3.lib;C:\VTK\lib\vtkImagingGeneral-9.3.lib;C:\VTK\lib\vtkFiltersGeometryPreview-9.3.lib;C:\VTK\lib\vtkFiltersGeneric-9.3.lib;C:\VTK\lib\vtkFiltersFlowPaths-9.3.lib;C:\VTK\lib\vtkFiltersCellGrid-9.3.lib;C:\VTK\lib\vtkFiltersAMR-9.3.lib;C:\VTK\lib\vtkFiltersParallel-9.3.lib;C:\VTK\lib\vtkFiltersTexture-9.3.lib;C:\VTK\lib\vtkFiltersModeling-9.3.lib;C:\VTK\lib\vtkDomainsChemistryOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingOpenGL2-9.3.lib;C:\VTK\lib\vtkRenderingHyperTreeGrid-9.3.lib;C:\VTK\lib\vtkRenderingUI-9.3.lib;C:\VTK\lib\vtkFiltersHybrid-9.3.lib;C:\VTK\lib\vtkDomainsChemistry-9.3.lib;C:\VTK\lib\vtkChartsCore-9.3.lib;C:\VTK\lib\vtkInfovisCore-9.3.lib;C:\VTK\lib\vtkFiltersExtraction-9.3.lib;C:\VTK\lib\vtkParallelDIY-9.3.lib;C:\VTK\lib\vtkIOXML-9.3.lib;C:\VTK\lib\vtkIOXMLParser-9.3.lib;C:\VTK\lib\vtkexpat-9.3.lib;C:\VTK\lib\vtkParallelCore-9.3.lib;C:\VTK\lib\vtkIOLegacy-9.3.lib;C:\VTK\lib\vtkIOCore-9.3.lib;C:\VTK\lib\vtkdoubleconversion-9.3.lib;C:\VTK\lib\vtklz4-9.3.lib;C:\VTK\lib\vtklzma-9.3.lib;C:\VTK\lib\vtkFiltersStatistics-9.3.lib;C:\VTK\lib\vtkFiltersHyperTree-9.3.lib;C:\VTK\lib\vtkImagingSources-9.3.lib;C:\VTK\lib\vtkIOImage-9.3.lib;C:\VTK\lib\vtkDICOMParser-9.3.lib;C:\VTK\lib\vtkmetaio-9.3.lib;C:\VTK\lib\vtktiff-9.3.lib;C:\VTK\lib\vtkRenderingContext2D-9.3.lib;C:\VTK\lib\vtkRenderingFreeType-9.3.lib;C:\VTK\lib\vtkfreetype-9.3.lib;C:\VTK\lib\vtkRenderingCore-9.3.lib;C:\VTK\lib\vtkFiltersSources-9.3.lib;C:\VTK\lib\vtkImagingCore-9.3.lib;C:\VTK\lib\vtkFiltersGeneral-9.3.lib;C:\VTK\lib\vtkFiltersVerdict-9.3.lib;C:\VTK\lib\vtkverdict-9.3.lib;C:\VTK\lib\vtkFiltersGeometry-9.3.lib;C:\VTK\lib\vtkCommonComputationalGeometry-9.3.lib;C:\VTK\lib\vtkFiltersCore-9.3.lib;C:\VTK\lib\vtkCommonExecutionModel-9.3.lib;C:\Qt\5.15.2\mingw81_64\lib\libQt5Gui.a;C:\Qt\5.15.2\mingw81_64\lib\libQt5Core.a;C:\Qt\5.15.2\mingw81_64\lib\libqtmain.a;C:\VTK\lib\vtklibharu-9.3.lib;C:\VTK\lib\vtkjsoncpp-9.3.lib;C:\VTK\lib\vtkexodusII-9.3.lib;C:\VTK\lib\vtknetcdf-9.3.lib;C:\VTK\lib\vtkcgns-9.3.lib;C:\VTK\lib\vtkhdf5_hl-9.3.lib;C:\VTK\lib\vtkhdf5-9.3.lib;C:\VTK\lib\vtklibproj-9.3.lib;C:\VTK\lib\vtksqlite-9.3.lib;C:\VTK\lib\vtkglew-9.3.lib;opengl32.lib;C:\VTK\lib\vtkpng-9.3.lib;C:\VTK\lib\vtkjpeg-9.3.lib;C:\VTK\lib\vtkzlib-9.3.lib;C:\VTK\lib\vtkCommonColor-9.3.lib;C:\VTK\lib\vtkfmt-9.3.lib;C:\VTK\lib\vtkCommonDataModel-9.3.lib;C:\VTK\lib\vtkpugixml-9.3.lib;C:\VTK\lib\vtkCommonSystem-9.3.lib;C:\VTK\lib\vtkCommonMisc-9.3.lib;C:\VTK\lib\vtkCommonTransforms-9.3.lib;C:\VTK\lib\vtkCommonMath-9.3.lib;C:\VTK\lib\vtkkissfft-9.3.lib;C:\VTK\lib\vtkCommonCore-9.3.lib;C:\VTK\lib\vtkloguru-9.3.lib;C:\VTK\lib\vtksys-9.3.lib;ws2_32.lib;dbghelp.lib;psapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/developer/QtDICOMViewer/build/RelWithDebInfo/QtDICOMViewer.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/developer/QtDICOMViewer/build/RelWithDebInfo/QtDICOMViewer.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\developer\QtDICOMViewer\build\CMakeFiles\b5a6bf80918d0666cefc47435ebedde2\autouic_(CONFIG).stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\developer\QtDICOMViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\developer\QtDICOMViewer\forms\MainWindow.ui;C:\Qt\5.15.2\mingw81_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_Debug.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\developer\QtDICOMViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\developer\QtDICOMViewer\forms\MainWindow.ui;C:\Qt\5.15.2\mingw81_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_Release.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\developer\QtDICOMViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\developer\QtDICOMViewer\forms\MainWindow.ui;C:\Qt\5.15.2\mingw81_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_MinSizeRel.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\developer\QtDICOMViewer\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\developer\QtDICOMViewer\forms\MainWindow.ui;C:\Qt\5.15.2\mingw81_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_RelWithDebInfo.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\developer\QtDICOMViewer\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/developer/QtDICOMViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/developer/QtDICOMViewer -BC:/developer/QtDICOMViewer/build --check-stamp-file C:/developer/QtDICOMViewer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\GDCM\lib\gdcm-3.0\GDCMConfig.cmake;C:\GDCM\lib\gdcm-3.0\GDCMConfigVersion.cmake;C:\GDCM\lib\gdcm-3.0\GDCMTargets-release.cmake;C:\GDCM\lib\gdcm-3.0\GDCMTargets.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QInsightTrackerPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\VTK\lib\cmake\vtk-9.3\FindDirectX.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-targets-release.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-targets.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-vtk-module-find-packages.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-vtk-module-properties.cmake;C:\VTK\lib\cmake\vtk-9.3\patches\99\FindOpenGL.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-config-version.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-config.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-prefix.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkCMakeBackports.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkEncodeString.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkHashSource.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModule.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModuleJson.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModuleTesting.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkObjectFactory.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkTopologicalSort.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\developer\QtDICOMViewer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/developer/QtDICOMViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/developer/QtDICOMViewer -BC:/developer/QtDICOMViewer/build --check-stamp-file C:/developer/QtDICOMViewer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\GDCM\lib\gdcm-3.0\GDCMConfig.cmake;C:\GDCM\lib\gdcm-3.0\GDCMConfigVersion.cmake;C:\GDCM\lib\gdcm-3.0\GDCMTargets-release.cmake;C:\GDCM\lib\gdcm-3.0\GDCMTargets.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QInsightTrackerPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\VTK\lib\cmake\vtk-9.3\FindDirectX.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-targets-release.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-targets.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-vtk-module-find-packages.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-vtk-module-properties.cmake;C:\VTK\lib\cmake\vtk-9.3\patches\99\FindOpenGL.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-config-version.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-config.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-prefix.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkCMakeBackports.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkEncodeString.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkHashSource.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModule.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModuleJson.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModuleTesting.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkObjectFactory.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkTopologicalSort.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\developer\QtDICOMViewer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/developer/QtDICOMViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/developer/QtDICOMViewer -BC:/developer/QtDICOMViewer/build --check-stamp-file C:/developer/QtDICOMViewer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\GDCM\lib\gdcm-3.0\GDCMConfig.cmake;C:\GDCM\lib\gdcm-3.0\GDCMConfigVersion.cmake;C:\GDCM\lib\gdcm-3.0\GDCMTargets-release.cmake;C:\GDCM\lib\gdcm-3.0\GDCMTargets.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QInsightTrackerPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\VTK\lib\cmake\vtk-9.3\FindDirectX.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-targets-release.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-targets.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-vtk-module-find-packages.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-vtk-module-properties.cmake;C:\VTK\lib\cmake\vtk-9.3\patches\99\FindOpenGL.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-config-version.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-config.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-prefix.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkCMakeBackports.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkEncodeString.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkHashSource.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModule.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModuleJson.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModuleTesting.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkObjectFactory.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkTopologicalSort.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\developer\QtDICOMViewer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/developer/QtDICOMViewer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/developer/QtDICOMViewer -BC:/developer/QtDICOMViewer/build --check-stamp-file C:/developer/QtDICOMViewer/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\GDCM\lib\gdcm-3.0\GDCMConfig.cmake;C:\GDCM\lib\gdcm-3.0\GDCMConfigVersion.cmake;C:\GDCM\lib\gdcm-3.0\GDCMTargets-release.cmake;C:\GDCM\lib\gdcm-3.0\GDCMTargets.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalData.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\GenerateExportHeader.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QInsightTrackerPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWebGLIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\VTK\lib\cmake\vtk-9.3\FindDirectX.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-targets-release.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-targets.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-vtk-module-find-packages.cmake;C:\VTK\lib\cmake\vtk-9.3\VTK-vtk-module-properties.cmake;C:\VTK\lib\cmake\vtk-9.3\patches\99\FindOpenGL.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-config-version.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-config.cmake;C:\VTK\lib\cmake\vtk-9.3\vtk-prefix.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkCMakeBackports.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkEncodeString.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkHashSource.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModule.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModuleJson.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkModuleTesting.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkObjectFactory.cmake;C:\VTK\lib\cmake\vtk-9.3\vtkTopologicalSort.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeCCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\developer\QtDICOMViewer\build\CMakeFiles\3.29.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\developer\QtDICOMViewer\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="C:\developer\QtDICOMViewer\forms\MainWindow.ui">
+    </None>
+    <ClInclude Include="C:\developer\QtDICOMViewer\include\MainWindow.h" />
+    <ClCompile Include="C:\developer\QtDICOMViewer\src\MainWindow.cpp" />
+    <ClCompile Include="C:\developer\QtDICOMViewer\src\main.cpp" />
+    <ClInclude Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Debug\forms\ui_MainWindow.h" />
+    <None Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_Debug.stamp">
+    </None>
+    <ClCompile Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Release\forms\ui_MainWindow.h" />
+    <None Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_Release.stamp">
+    </None>
+    <ClCompile Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_MinSizeRel\forms\ui_MainWindow.h" />
+    <None Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_MinSizeRel.stamp">
+    </None>
+    <ClCompile Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_RelWithDebInfo\forms\ui_MainWindow.h" />
+    <None Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_RelWithDebInfo.stamp">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\developer\QtDICOMViewer\build\ZERO_CHECK.vcxproj">
+      <Project>{1F805650-71EB-31F0-9C73-4DCA2178B319}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,3 @@
+C:/developer/QtDICOMViewer/build/CMakeFiles/QtDICOMViewer.dir
+C:/developer/QtDICOMViewer/build/CMakeFiles/ALL_BUILD.dir
+C:/developer/QtDICOMViewer/build/CMakeFiles/ZERO_CHECK.dir

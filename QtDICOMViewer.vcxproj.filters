@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\developer\QtDICOMViewer\src\MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\developer\QtDICOMViewer\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\developer\QtDICOMViewer\include\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Debug\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_Release\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_MinSizeRel\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\include_RelWithDebInfo\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\developer\QtDICOMViewer\build\CMakeFiles\b5a6bf80918d0666cefc47435ebedde2\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\developer\QtDICOMViewer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\developer\QtDICOMViewer\forms\MainWindow.ui" />
+    <None Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_Debug.stamp" />
+    <None Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_Release.stamp" />
+    <None Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\developer\QtDICOMViewer\build\QtDICOMViewer_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9EBC7998-82C6-3205-BFEF-BCA6E44EC452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A815C9F4-BBAC-3868-8F75-088EE2E417B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E8820C98-669E-3EBC-A98D-A895058A4FFE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
